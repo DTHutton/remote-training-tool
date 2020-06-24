@@ -2,7 +2,7 @@
 
 ## About
 
-The Remote Training Tool app is a simple tool designed to assist with facilitating a remote training class. Currently, it consists soley of a series of preset timers to display when learners should expect to be done with activities or when to return from a break. [Check out the wiki for more info](https://github.com/DTHutton/training-timer/wiki).
+The Remote Training Tool app is a simple tool designed to assist with facilitating a remote training class. Currently, it consists solely of a series of preset timers to display when learners should expect to be done with activities or when to return from a break. [Check out the wiki for more info](https://github.com/DTHutton/training-timer/wiki).
 
 ## Developer Info
 
