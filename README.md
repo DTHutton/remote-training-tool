@@ -1,44 +1,12 @@
-# Training Timer
-
-### Table of Contents
-
-* [About](#about)
-* [Use](#use)
-* [Contact](#contact)
-* [Developer Info](#developer-info)
-
+# Remote Training Tool
 
 ### About
 
-Training timer is a simple tool to help visualize return times for facilitating a remote training class.
+The Remote Training Tool app is a simple tool designed to assist with facilitating a remote training class. Currently, it consists soley of a series of preset timers to display when learners should expect to be done with activities or when to return from a break. 
 
+### Contributing
 
-### Use
-
-There are two options for using the tool.
-
-#### Option One: Select one of the preset timers.
-
-These preset timers are setup to make it easy for facilitators to determine a time for learners to return with one click. The timers come with 4 preset options.
-* 5 minutes
-* 10 minutes
-* 15 minutes
-* Break (15 minutes)
-* Lunch (30 minutes)
-
-**Note**: At this time, these default options are all that is available. The ability to set these options will be added in a future release.
-
-#### Option Two: Choose a specific return time.
-
-Choose a specific return time. This is useful for when the preset timers have learners returning at awkward times like `10:58` and allow for them to have an extra couple of minutes of break while providing a clean time of return. Once the return time has been chosen, click the `Choose Return Time` button to generate the display.
-
-**Note**: At this time, only the return time will show when selected. A countdown timer for this option will be added in a future release.
-
-
-### Contact
-
-For issues with the app, [please open a ticket through GitHub](https://github.com/DTHutton/training-timer/issues/new). If you do not have a GitHub account, [please email me with concerns](mailto:kered.nottuh@gmail.com).
-
+For issues with the app or to request a feature, [please open a ticket through GitHub](https://github.com/DTHutton/training-timer/issues). If you do not have a GitHub account and do not wish to create one, [please email me with concerns](mailto:kered.nottuh@gmail.com).
 
 ### Developer Info
 
