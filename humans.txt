@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Derek Hutton -- Developer -- @DTHutton91
+
+# THANKS
+
+    Wes Bos -- Javascript30 -- @wesbos
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
