@@ -1,10 +1,10 @@
 {
   "name": "training_timer",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Training timer is a simple tool to help visualize return times for facilitating a remote training class",
   "keywords": "",
   "license": "",
-  "author": "",
+  "author": "Derek Hutton",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",

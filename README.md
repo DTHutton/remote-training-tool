@@ -48,3 +48,4 @@ For issues with the app, please open a ticket through GitHub. If you do not have
 | Twitter | [@DTHutton91](https://twitter.com/DTHutton91) |
 | Email | [kered.nottuh@gmail.com](mailto:kered.notth@gmail.com) |
 
+Special thanks to Wes Bos ([GitHub](https://github.com/wesbos), [Twitter](https://twitter.com/wesbos)) and his [Javascript30](https://github.com/wesbos/JavaScript30) course.
