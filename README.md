@@ -30,7 +30,7 @@ These preset timers are setup to make it easy for facilitators to determine a ti
 
 #### Option Two: Choose a specific return time.
 
-Choose a specific return time. This is useful for when the preset timers have learners returning at awkward times like `10:58` and allow for them to have an extra couple of minutes of break while providing a clean time of return.
+Choose a specific return time. This is useful for when the preset timers have learners returning at awkward times like `10:58` and allow for them to have an extra couple of minutes of break while providing a clean time of return. Once the return time has been chosen, click the `Choose Return Time` button to generate the display.
 
 **Note**: At this time, only the return time will show when selected. A countdown timer for this option will be added in a future release.
 
