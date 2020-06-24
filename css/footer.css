@@ -1,0 +1,38 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 9%;
+}
+
+.footer > * {
+  flex: 1;
+}
+
+.footer__item {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(242, 169, 0, 0.4);
+  border-right: 1px solid rgba(242, 169, 0, 0.4);
+  padding: 1rem;
+  font-family: 'Inconsolata', monospace;
+  height: 100%;
+}
+
+.footer__item:hover,
+.footer__item:focus {
+  background: rgba(242, 169, 0, 0.2);
+  outline: 0;
+}
+
+[target=_blank] {
+  text-decoration: none;
+  color: white;
+}

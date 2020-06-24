@@ -1,20 +1,3 @@
-html {
-  box-sizing: border-box;
-  font-size: 10px;
-  background: #898D8D;
-  background: linear-gradient(45deg, #FFD470 0%, #FFC233 50%, #F2A900 100%);
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  text-align: center;
-  font-family: 'Inconsolata', monospace;
-}
-
 .display__time-left {
   font-weight: 100;
   font-size: 20rem;
@@ -82,3 +65,4 @@ body {
   font-size: 4rem;
   color: white;
 }
+
