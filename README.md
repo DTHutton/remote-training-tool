@@ -37,7 +37,7 @@ Choose a specific return time. This is useful for when the preset timers have le
 
 ### Contact
 
-For issues with the app, [please open a ticket through GitHub](https://github.com/DTHutton/training-timer/issues/new). If you do not have a GitHub account, please email me at [kered.notth@gmail.com](mailto:kered.nottuh@gmail.com) with concerns.
+For issues with the app, [please open a ticket through GitHub](https://github.com/DTHutton/training-timer/issues/new). If you do not have a GitHub account, [please email me with concerns](mailto:kered.nottuh@gmail.com).
 
 
 ### Developer Info
