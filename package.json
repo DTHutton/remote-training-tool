@@ -1,9 +1,9 @@
 {
   "name": "training_timer",
   "version": "1.0.0",
-  "description": "Training timer is a simple tool to help visualize return times for facilitating a remote training class",
+  "description": "Training Timer is a simple tool to help visualize return times for facilitating a remote training class.",
   "keywords": "",
-  "license": "",
+  "license": "MIT",
   "author": "Derek Hutton",
   "scripts": {
     "build": "parcel build index.html",
