@@ -31,9 +31,9 @@
 
 <div class="timer">
   <div class="timer__controls">
-    <button data-time="300" class="timer__button">5 Min Activity</button>
-    <button data-time="600" class="timer__button">10 Min Activity</button>
-    <button data-time="900" class="timer__button">15 Min Activity</button>
+    <button data-time="3" class="timer__button">5 Minutes</button>
+    <button data-time="600" class="timer__button">10 Minutes</button>
+    <button data-time="900" class="timer__button">15 Minutes</button>
     <button data-time="900" class="timer__button">Break</button>
     <button data-time="1800" class="timer__button">Lunch</button>
 
@@ -45,9 +45,12 @@
 
   <div class="display">
     <h1 class="display__time-left"></h1>
-    <p class="display__end-time"></p>
+    <p class="display__end-time">Select a preset timer or choose a return time</p>
+    <button id="alarmButton" class="display__alarm-off timer__button">Turn Alarm Off</button>
   </div>
 </div>
+
+
 
 <footer class="footer">
   <p class="footer__item">
@@ -71,6 +74,9 @@
     </a>
   </p>
 </footer>
+
+<!-- Audio Tags -->
+<audio id="alarm1" src="./assets/alarm_1.mp3" loop="true"></audio>
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>

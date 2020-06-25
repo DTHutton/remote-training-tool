@@ -1,8 +1,17 @@
+:root {
+  --hmh-yellow: #F2A900;
+  --hmh-yellow-accent1: #FFC233;
+  --hmh-yellow-accent2: #FFD470;
+  --hmh-gray: #898D8D;
+  --hmh-blue: #B9D8E5;
+  --text-primary: white;
+}
+
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: #898D8D;
-  background: linear-gradient(45deg, #FFD470 0%, #FFC233 50%, #F2A900 100%);
+  background: var(--hmh-gray);
+  background: linear-gradient(45deg, var(--hmh-yellow-accent2) 0%, var(--hmh-yellow-accent1) 50%, var(--hmh-yellow) 100%);
 }
 
 *, *:before, *:after {

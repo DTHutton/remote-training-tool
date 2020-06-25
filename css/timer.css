@@ -1,11 +1,3 @@
-.display__time-left {
-  font-weight: 100;
-  font-size: 20rem;
-  margin: 0;
-  color: white;
-  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
-}
-
 .timer {
   display: flex;
   min-height: 100vh;
@@ -37,7 +29,7 @@
   background: none;
   border: 0;
   cursor: pointer;
-  color: white;
+  color: var(--text-primary);
   font-size: 2rem;
   text-transform: uppercase;
   background: rgba(0, 0, 0, 0.1);
@@ -63,6 +55,27 @@
 
 .display__end-time {
   font-size: 4rem;
-  color: white;
+  color: var(--text-primary);
 }
 
+.display__time-left {
+  font-weight: 100;
+  font-size: 20rem;
+  margin: 0;
+  color: var(--text-primary);
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.display__alarm-off {
+  display: none;
+}
+
+.display__alarm-on {
+  background: var(--hmh-blue);
+}
+
+.display__alarm-on:hover,
+.display__alarm-on:focus {
+  background: rgba(185, 216, 229, 0.4);
+  outline: 0;
+}
