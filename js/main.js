@@ -1,8 +1,18 @@
+//? main variables
+//?------------------------------------
 let countdown;
+let timeout;
 const timerDisplay = document.querySelector('.display__time-left');
 const endTime = document.querySelector('.display__end-time');
-const buttons = document.querySelectorAll('[data-time]');
+const timerButtons = document.querySelectorAll('[data-time]');
 
+//? alarm variables
+//?------------------------------------
+const alarmButton = document.querySelector('#alarmButton');
+const alarmAudio = document.querySelector('#alarm1');
+
+//? main functions
+//?------------------------------------
 function timer(seconds) {
   //! clear any existing timers
   clearInterval(countdown);
@@ -26,9 +36,10 @@ function timer(seconds) {
 function displayTimeLeft(seconds) {
   const minutes = Math.floor(seconds / 60);
   const remainderSeconds = seconds % 60;
-  const display = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
-  document.title = display;
-  timerDisplay.textContent = display;
+  timerDisplay.textContent = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
+  if (!minutes && !remainderSeconds) {
+    turnAlarmOn();
+  }
 }
 
 function displayEndTime(timestamp) {
@@ -51,25 +62,49 @@ function timeSelect(time) {
   endTime.textContent = `Be Back At ${adjustedHour}:${mins < 10 ? '0' : ''}${mins}`;
 }
 
-function timeSelectTimer(time) {
-  const now = Date.now();
-  const then = time.setTime(time);
-  console.log({now}, {then});
-  // displayTimeLeft(then);
-
+//? alarm functions
+//?------------------------------------
+function turnAlarmOff() {
+  if (timeout) {
+    alert('Alarm timed out after 60 seconds.');
+  }
+  clearTimeout(timeout);
+  alarmAudio.pause();
+  alarmButton.classList.remove('display__alarm-on');
+  alarmButton.classList.add('display__alarm-off');
+  timerDisplay.textContent = '';
+  endTime.textContent = 'Select a preset timer or choose a return time';
 }
 
-buttons.forEach(button => button.addEventListener('click', startTimer));
+function turnAlarmOn() {
+  timerDisplay.textContent = 'Time\'s up!';
+  endTime.textContent = '';
+  alarmAudio.play();
+  alarmButton.classList.remove('display__alarm-off');
+  alarmButton.classList.add('display__alarm-on');
+  timeout = setTimeout(turnAlarmOff, 60 * 1000);
+}
+
+//? event listeners
+//?------------------------------------
+timerButtons.forEach(button => button.addEventListener('click', startTimer));
+
 document.customTimeForm.addEventListener('submit', function (e) {
   e.preventDefault();
   const time = this.timeReturn.valueAsDate;
   if (!time) {
-    endTime.textContent = `Please select a time to return.`;
+    endTime.textContent = `Please select a valid time to return`;
     return;
   }
   clearInterval(countdown);
   timerDisplay.textContent = '';
   timeSelect(time);
-  timeSelectTimer(time);
   this.reset();
+});
+
+alarmButton.addEventListener('click', function (e) {
+  e.preventDefault();
+  clearTimeout(timeout);
+  timeout = null;
+  turnAlarmOff();
 });
